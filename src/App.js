@@ -4,10 +4,19 @@ import Previewer from './components/previewer';
 
 const App = () => {
   const initialMarkdown = `
-# Welcome to my React Markdown Previewer!
+# Welcome!
 
-## This is a sub-heading...
-### And here's some other cool stuff:
+## Heading 2
+
+### Heading 3
+
+#### Heading 4
+
+##### Heading 5
+
+###### Heading 6
+
+---
   
 Heres some code, \`<div></div>\`, between 2 backticks.
 
@@ -22,9 +31,14 @@ function anotherExample(firstLine, lastLine) {
 \`\`\`
   
 You can also make text **bold**... whoa!
+
 Or _italic_.
+
 Or... wait for it... **_both!_**
+
 And feel free to go crazy ~~crossing stuff out~~.
+
+---
 
 There's also [links](https://www.freecodecamp.com), and
 > Block Quotes!
@@ -37,9 +51,9 @@ Your content can | be here, and it | can be here....
 And here. | Okay. | I think we get it.
 
 - And of course there are lists.
-  - Some are bulleted.
-     - With different indentation levels.
-        - That look like this.
+- Some are bulleted.
+- With different indentation levels.
+- That look like this.
 
 
 1. And there are numbererd lists too.
@@ -58,7 +72,7 @@ And here. | Okay. | I think we get it.
   };
 
   return (
-    <main className='flex'>
+    <main className='app'>
       <Editor handleMarkdown={handleMarkdown} markdown={markdown} />
       <Previewer text={markdown} />
     </main>

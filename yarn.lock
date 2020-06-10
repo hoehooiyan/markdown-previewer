@@ -5516,6 +5516,16 @@ follow-redirects@^1.0.0:
   dependencies:
     debug "^3.0.0"
 
+fontsource-fira-mono@^2.1.3:
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/fontsource-fira-mono/-/fontsource-fira-mono-2.1.3.tgz#ff04094419b844fb66fb0b57a12e4007ec8ae9d1"
+  integrity sha512-vLLZc+eaNwvHtftyqX103bHENxR49RVa0FCjqQ79x5oAf7aY2ibxaKviBki4p3xYPL71f2Bh1In7wJ1ap4N/QQ==
+
+fontsource-fira-sans@^2.1.3:
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/fontsource-fira-sans/-/fontsource-fira-sans-2.1.3.tgz#fe69954c1dee7af5f1aeefc162c617b910ebabed"
+  integrity sha512-8YqCP4wlgfU1irXWhzyTaj7rX8aywiWbkwRcGt/V0MtAulnMo4iBWNY8OFfFesxD76XwcHYaq1VxHDW1P8Htgw==
+
 for-in@^0.1.3:
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/for-in/-/for-in-0.1.8.tgz#d8773908e31256109952b1fdb9b3fa867d2775e1"

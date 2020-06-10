@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Title = ({ title }) => {
-  return <p>{title}</p>;
+  return <header className='container-title'>{title}</header>;
 };
 
 export default Title;

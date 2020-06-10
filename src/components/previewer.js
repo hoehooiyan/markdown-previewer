@@ -5,12 +5,12 @@ import Title from './title';
 
 const Previewer = ({ text }) => {
   marked.setOptions({
-    pedantic: false,
-    gfm: true,
     breaks: true,
+    gfm: true,
+    pedantic: false,
     smartLists: true,
     smartypants: false,
-    xhtml: false,
+    xhtml: true,
   });
 
   const renderedText = {
@@ -18,10 +18,14 @@ const Previewer = ({ text }) => {
   };
 
   return (
-    <>
-      <Title title='previewer' />
-      <section id='preview' dangerouslySetInnerHTML={renderedText} />
-    </>
+    <section className='container container__previewer'>
+      <Title title='preview' />
+      <article
+        id='preview'
+        className='container__content container__previewer--content'
+        dangerouslySetInnerHTML={renderedText}
+      />
+    </section>
   );
 };
 
